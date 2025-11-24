@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Grooming Detection</title>
+<style>
+body { font-family: Arial; margin: 40px; }
+textarea { width: 100%; height: 150px; }
+button { margin-top: 10px; padding: 10px 20px; }
+#result { margin-top: 20px; font-size: 18px; }
+</style>
+</head>
+<body>
+
+<h2>🛡 Grooming Message Detection</h2>
+
+<textarea id="msg" placeholder="메시지를 입력하세요"></textarea>
+<button onclick="send()">검사하기</button>
+
+<div id="result"></div>
+
+<script>
+async function send() {
+    let text = document.getElementById("msg").value;
+
+    const res = await fetch("/predict", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({text})
+    });
+
+    const data = await res.json();
+
+    document.getElementById("result").innerHTML =
+        `<b>그루밍 확률: ${(data.prob_grooming * 100).toFixed(2)}%</b>`;
+}
+</script>
+
+</body>
+</html>
