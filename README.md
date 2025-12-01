@@ -392,7 +392,7 @@ FastAPI 기반 웹 데모를 구축해 실시간으로 그루밍 대화를 탐�
 
 입력 텍스트: **"I really enjoy chatting with you!"**  ("너랑 대화하는 거 정말 즐거워!")
    <a align="center">                              
-   <img src="photo/good.png" width="1000"></a>   
+   <img src="photo/good.png" width="500"></a>   
 분석 결과:
 - 판정: **안전한 메시지로 판단됨**
 - 신뢰도: 3.49%
@@ -403,17 +403,20 @@ FastAPI 기반 웹 데모를 구축해 실시간으로 그루밍 대화를 탐�
 #### 일상 대화 2 
 
   입력 텍스트: **"I saw the new movie everyone's talking about—have you watched it yet? 
-             It was way better than I expected"** ("다들 얘기하는 그 새 영화 봤어. 너도 봤어? 생각보다 훨씬 좋더라")                          
-   <a align="center">                                                                           
-     <img src="photo/good2.png" width="1000"></a>                                                 
+             It was way better than I expected"** ("다들 얘기하는 그 새 영화 봤어. 너도 봤어? 생각보다 훨씬 좋더라") 
+
+<a align="center">                                                                           
+<img src="photo/good2.png" width="500"></a>                                                 
   분석 결과:                                                                                         
   - 판정: **안전한 메시지로 판단됨**                                                                         
-  - 신뢰도: 3.49%                                                                                   
+  - 신뢰도: 1.77%                                                                                   
   - 위험도: 낮음                                                                                      
                                                                                                  
-  일반적인 친근한 대화로, 그루밍의 특징적 패턴(개인정보 요구, 성적 암시, 고립 시도)이 전혀 없어 정상 대화로 정확히 분류했다.                       
+  일반적인 영화 추천 대화로. 위험 요소는 전혀 없다.                     
                                                                                    
 ### 테스트 케이스 : 그루밍 대화
+     
+#### 그루밍 대화 1  
 
 입력 텍스트: **"You're so mature for your age... I wish I could see more of 
            your body. Can you keep our chat private from your parents?"**  ("넌 나이에 비해 정말 성숙하네... 네 몸을 더 보고 싶어. 우리 대화 부모님한테 비밀로 해줄 수 있어?")                   
@@ -430,6 +433,10 @@ FastAPI 기반 웹 데모를 구축해 실시간으로 그루밍 대화를 탐�
 - 부모로부터 비밀 유지 요청 (고립 전략)
 
 **전형적인 그루밍 4단계 패턴을 정확히 탐지했으며, 위험 신호를 감지했다.**
+
+
+#### 그루밍 대화 2
+
 
 ## 7. 핵심 성과
 ### 7.1 데이터 생성 혁신
