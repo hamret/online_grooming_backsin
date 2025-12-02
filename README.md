@@ -456,7 +456,7 @@ FastAPI 기반 웹 데모를 구축해 실시간으로 그루밍 대화를 탐�
 입력 텍스트: **"You're so mature for your age... I wish I could see more of 
            your body. Can you keep our chat private from your parents?"**  ("넌 나이에 비해 정말 성숙하네... 네 몸을 더 보고 싶어. 우리 대화 부모님한테 비밀로 해줄 수 있어?")                   
    <a align="center">                                                                   
-   <img src="photo/bad.png" width="1000"></a> 
+   <img src="photo/bad.png" width="500"></a> 
 
 <br>
 분석 결과: 
@@ -495,9 +495,9 @@ FastAPI 기반 웹 데모를 구축해 실시간으로 그루밍 대화를 탐�
 #### 그루밍 대화 2
       
   입력 텍스트: **"You seem so much more mature than kids your age. I feel like I can                                                                                               
-             talk to you about things I don't tell other people"**("넌 같은 나이 애들보다 훨씬 성숙해 보여. 다른 사람한테는 안 하는 얘기도 너한테는 할 수 있을 것 같아"")                           
+             talk to you about things I don't tell other people" **("넌 같은 나이 애들보다 훨씬 성숙해 보여. 다른 사람한테는 안 하는 얘기도 너한테는 할 수 있을 것 같아"")                           
      <a align="center">                                                                                                                                               
-     <img src="photo/bad.png" width="1000"></a>                                                                                                                       
+     <img src="photo/bad.png" width="500"></a>                                                                                                                       
   **분석 결과** :  
 
   - 판정: **Grooming 의심됨**                                                                                                                                              
