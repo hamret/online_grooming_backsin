@@ -40,7 +40,7 @@ def create_classifier_dataset():
         with open(INPUT_FILE, 'r', encoding='utf-8') as f:
             data = json.load(f)
     except FileNotFoundError:
-        print(f"[오류] {INPUT_FILE}을 찾을 수 없습니다. PJZC.txt 파일이 이 스크립트와 같은 폴더에 있는지 확인하세요.")
+        print(f"[오류] {INPUT_FILE}을 찾을 수 없습니다. N_G_data.txt 파일이 이 스크립트와 같은 폴더에 있는지 확인하세요.")
         return
     except Exception as e:
         print(f"[오류] 파일 로딩 중 에러: {e}")
@@ -73,7 +73,7 @@ def create_classifier_dataset():
     print(f"Successfully processed {len(processed_data)} conversations for classification.")
 
     if not processed_data:
-        print("[오류] 처리할 데이터가 없습니다. PJZC.txt 파일 내용을 확인하세요.")
+        print("[오류] 처리할 데이터가 없습니다. N_G_data.txt 파일 내용을 확인하세요.")
         return
 
     # Hugging Face Dataset 객체로 변환
