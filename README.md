@@ -1,7 +1,7 @@
 # 온라인 그루밍 탐지
 
 <a align="center">                            
-<img src="photo/4_대지_1.png" width="1000"></a> 
+<img src="photo/4_대지_1.png" width="600"></a> 
 
 ## 프로젝트 개요
 
